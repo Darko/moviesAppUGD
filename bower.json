@@ -1,0 +1,20 @@
+{
+  "name": "moviesapp",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Darko <espadomkd@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Darko/moviesAppUGD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.9"
+  }
+}
