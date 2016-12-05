@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  min-height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+header .hero {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+}
+
+header .hero:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(28, 22, 78, 0.4), rgba(28, 22, 78, 0.3));
+}
+
+.main-nav {
+  padding: 16px 0 8px;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-nav .logo {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-size: 1.6em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-nav .logo span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 8px -3px 0;
+}
+
+.logo span:before,
+.logo span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px #fff solid;
+  border-radius: 50%;
+}
+
+.logo span:before {
+  width: 24px;
+  height: 24px;
+  top: -7px;
+  left: -7px;
+}
+
+.logo span:after {
+  width: 8px;
+  height: 8px;
+  border: none;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-nav:after {
+  content: '';
+  width: calc(100% - 160px);
+  top: calc(50% + 2px);
+  right: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+}
+
+.featured-destination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 43px);
+  color: #fff;
+  padding: 0 60px 110px;
+}
+
+.featured-destination h1 {
+  font-size: 72px;
+  font-weight: 600;
+  margin: 8px 0 16px;
+}
+
+.featured-destination h2 {
+  font-size: 24px;
+  font-weight: 200;
+  padding-left: 100px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.featured-destination h2:before {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 1px;
+  background-color: #fff;
+  left: 0;
+  top: 50%;
+}
+
+.featured-destination h3 {
+  font-size: 16px;
+  font-weight: normal;
+  max-width: 500px;
+  line-height: 1.4;
+}
