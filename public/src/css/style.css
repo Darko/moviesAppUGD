@@ -19,6 +19,8 @@ img {
   max-width: 100%;
 }
 
+/* Grid */
+
 .container {
   width: 100%;
   max-width: 1160px;
@@ -26,6 +28,70 @@ img {
   position: relative;
   z-index: 1;
 }
+
+/* Assets - buttons */
+
+button {
+  background: none;
+  border: none;
+}
+
+.button {
+  color: rgba(255, 255, 255, 0.87);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: .2s ease-in-out;
+}
+
+.button:focus, .button:active {
+  outline: none;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button.light {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.button.light.ghost {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.95);
+}
+.button.light.ghost:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.button.icon-button {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.button.icon-button.light {
+  background-color: rgba(255, 255, 255, 0.87);
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 24px;
+}
+
+.button.watch-trailer-button {
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px rgba(255, 255, 255, 0.7) solid;
+}
+.button.watch-trailer-button .material-icons {
+  margin-right: 8px;
+}
+
 
 header .hero {
   width: 100%;
@@ -43,6 +109,8 @@ header .hero:before {
   height: 100%;
   background: linear-gradient(rgba(28, 22, 78, 0.4), rgba(28, 22, 78, 0.3));
 }
+
+ /*Navigation*/
 
 .main-nav {
   padding: 16px 0 8px;
@@ -109,22 +177,26 @@ header .hero:before {
   position: absolute;
 }
 
-.featured-destination {
+ /* Featured show */
+
+.featured-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   height: calc(100% - 43px);
   color: #fff;
   padding: 0 60px 110px;
 }
 
-.featured-destination h1 {
+.featured-content h1 {
   font-size: 72px;
+  line-height: 1.6;
   font-weight: 600;
   margin: 8px 0 16px;
 }
 
-.featured-destination h2 {
+.featured-content h2 {
   font-size: 24px;
   font-weight: 200;
   padding-left: 100px;
@@ -132,7 +204,7 @@ header .hero:before {
   text-transform: uppercase;
 }
 
-.featured-destination h2:before {
+.featured-content h2:before {
   content: '';
   position: absolute;
   width: 90px;
@@ -142,9 +214,15 @@ header .hero:before {
   top: 50%;
 }
 
-.featured-destination h3 {
+.featured-content h3 {
   font-size: 16px;
-  font-weight: normal;
-  max-width: 500px;
-  line-height: 1.4;
+  font-weight: lighter;
+  max-width: 450px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+.featured-content .button {
+  margin-top: 50px;
 }
