@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="SickMovies">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,43 +8,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
+<body ng-controller="HomePageController as vm">
 
-  <header>
-    <div class="hero" style="background-image: url(src/images/got-hero-img.jpg)">
-      <nav class="main-nav">
-        <a href="/" class="logo">
-          <span class="icon"></span>
-          SickMovies
-        </a>
-      </nav>
-
-      <div class="featured-content container">
-        <h2>Winter is coming</h2>
-        <h1>Game of Thrones</h1>
-        <h3>Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race, hell-bent on destruction, returns after being dormant for thousands of years.</h3>
-
-        <button class="button light watch-trailer-button ghost">
-          <i class="play-button material-icons">play_arrow</i>
-          Play trailer
-        </button>
-
-      </div>
-
-    </div>
-  </header>
-<!--
-  <section class="featured-multiple">
-    <div class="travel-card">
-      <img src="src/images/small-preview.jpg" class="travel-img">
-      <div class="travel-card-content">
-        <h1>Macedonia</h1>
-        <p>A landlocked country, the Republic of Macedonia has borders with Kosovo[a] to the northwest, Serbia to the north, Bulgaria to the east, Greece to the south, and Albania to the west.</p>
-      </div>
-    </div>
-  </section> -->
+  <div ui-view></div>
 
   <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <script src="src/js/app.js"></script>
+  <script src="src/js/routes.js"></script>
+  <script src="src/js/controllers.js"></script>
+  <script src="src/js/components.js"></script>
 
 </body>
 </html>
