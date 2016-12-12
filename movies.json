@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Game of Thrones",
+    "type": "show",
+    "caption": "Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race, hell-bent on destruction, returns after being dormant for thousands of years.",
+    "preview": "http://www.geek.com/wp-content/uploads/2016/07/nedstark-625x350.jpg",
+    "hero": "src/images/got-hero-img.jpg"
+  },
+  {
+    "title": "Homeland",
+    "type": "show",
+    "caption": "A bipolar CIA operative becomes convinced a prisoner of war has been turned by al-Qaeda and is planning to carry out a terrorist attack on American soil.",
+    "preview": "https://cdn.psychologytoday.com/sites/default/files/blogs/164918/2014/11/164928-170120.jpg",
+    "hero": "http://justgoodvibe.com/wp-content/uploads/2015/12/homeland-8.jpg",
+  },
+  {
+    "title": "Captain America: Civil War",
+    "type": "movie",
+    "caption": "Political interference in the Avengers' activities causes a rift between former allies Captain America and Iron Man.",
+    "preview": "http://cdn-static.denofgeek.com/sites/denofgeek/files/captain-america-civil-war-key-art.jpg",
+    "hero": "http://www.activistpost.com/wp-content/uploads/2016/05/8-questions-captain-america-civil-war-needs-to-answer-893088.jpg"
+  },
+  {
+    "title": "Stranger Things",
+    "type": "show",
+    "caption": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.",
+    "preview": "http://empireonline.media/jpg/50/0/0/640/480/aspectfit/0/0/0/0/0/0/c/features/57869a31823490d062667985/stranger%20things%20titles.jpg",
+    "hero": "https://i.ytimg.com/vi/5FNMaL6iBQQ/maxresdefault.jpg"
+  },
+  {
+    "title": "Limitless",
+    "type": "movie",
+    "caption": "With the help of a mysterious pill that enables the user to access 100 percent of his brain abilities, a struggling writer becomes a financial wizard, but it also puts him in a new world with lots of dangers.",
+    "preview": "http://img.cinemablend.com/cb/2/1/e/1/a/1/21e1a1feb79b5aaa96d65bc81fa0b9e06eb50ed8cc920c8a028fef4424715699.jpg",
+    "hero": "http://lbc9.net/movies-and-tv/movie/limitless/limitless-actors-cooper-de-niro.jpg"
+  },
+  {
+    "title": "Batman v Superman: Dawn of Justice",
+    "type": "movie",
+    "caption": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+    "preview": "http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/03/04/103443927-71FUiJySDcL._SL1200_.530x298.jpg",
+    "hero": "http://www.mediastinger.com/wp-content/uploads/2016/02/Batman-v-Superman-Final-Trailer-hq.jpg"
+  },
+  {
+    "title": "Arrival",
+    "type": "movie",
+    "caption": "A linguist is recruited by the military to assist in translating alien communications.",
+    "preview": "http://i2.cdn.cnn.com/cnnnext/dam/assets/160820123109-arrival-film-large-169.jpg",
+    "hero": "http://humanechoes.com/wp-content/uploads/2016/11/arrival-movie.png"
+  },
+  {
+    "title": "Django Unchained",
+    "type": "movie",
+    "caption": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+    "preview": "http://img.wennermedia.com/article-leads-horizontal/rs-150297-20121213-django-x624-1355431152.jpg",
+    "hero": "http://wallpapercave.com/wp/0Xp5Mbm.jpg"
+  },
+  {
+    "title": "The Flash",
+    "type": "show",
+    "caption": "After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming a superhero, The Flash, fighting crime in Central City.",
+    "preview": "http://untitledtv.com/wp-content/uploads/2016/06/the-flash-tv-series-review.jpg",
+    "hero": "http://www.geekgirlauthority.com/wp-content/uploads/2016/10/The-Flash-.jpg"
+  },
+  {
+    "title": "12 Years a Slave",
+    "type": "movie",
+    "caption": "In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery.",
+    "preview": "http://forum.fletchers.net.au/wp-content/uploads/12-Years-A-Slave-Movie.jpg",
+    "hero": "https://images.alphacoders.com/485/485720.jpg"
+  }
+]

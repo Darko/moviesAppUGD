@@ -1,0 +1,16 @@
+<div class="backfade">
+  <div class="modal-wrapper">
+    <div class="header layout-row layout-align-space-between-center">
+      <span class="layout-row layout-align-space-between-center dialog-title">
+        <i class="material-icons">play_arrow</i>
+        {{ $ctrl.video.title }}
+      </span>
+      <button class="button icon-button dark" ng-click="$ctrl.close()">
+        <i class="material-icons">close</i>
+      </button>
+    </div>
+    <div class="body">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pS-gbqbVd8c" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

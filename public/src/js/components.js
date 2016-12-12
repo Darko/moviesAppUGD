@@ -1,28 +1,53 @@
 app
 .component('navbar', {
   templateUrl: '../../components/navbar.html',
-  controller: function() {
-    var vm = this;
-  },
-  controllerAs: 'vm'
+  controllerAs: '$ctrl',
+  controller: function () {
+    var $ctrl = this;
+  }
 })
 .component('featuredContent', {
   templateUrl: '../../components/featuredContent.html',
-  controller: function () {
-    var vm = this;
+  controllerAs: '$ctrl',
+  bindings: {
+    resource: '='
   },
-  controllerAs: 'vm'
+  controller: function () {
+    var $ctrl = this;
+
+    $ctrl.dialog = {
+      isOpen: false
+    }
+
+    $ctrl.playTrailer = function () {
+      $ctrl.dialog.isOpen = true;
+    }
+
+  }
 })
 .component('resourceCard', {
   templateUrl: '../../components/resourceCard.html',
   bindings: {
     resource: '='
   },
+  controllerAs: '$ctrl',
   controller: function () {
-    var vm = this;
-
-    console.log(vm.resource);
-
+    var $ctrl = this;
+  }
+})
+.component('dialogPlayer', {
+  templateUrl: '../../components/dialogPlayer.html',
+  bindings: {
+    video: '<',
+    settings: '='
   },
-  controllerAs: 'vm'
+  controllerAs: '$ctrl',
+  controller: function () {
+    var $ctrl = this;
+
+    $ctrl.close = function () {
+      $ctrl.settings.isOpen = false;
+    }
+
+  }
 })

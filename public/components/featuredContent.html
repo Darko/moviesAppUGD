@@ -1,11 +1,19 @@
 <div class="featured-content container">
-  <h2>Winter is coming</h2>
-  <h1>Game of Thrones</h1>
-  <h3>Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race, hell-bent on destruction, returns after being dormant for thousands of years.</h3>
+  <h2>{{ $ctrl.resource.saying }}</h2>
+  <h1>{{ $ctrl.resource.title }}</h1>
+  <h3>{{ $ctrl.resource.caption }}</h3>
 
-  <button class="button light watch-trailer-button ghost">
-    <i class="play-button material-icons">play_arrow</i>
-    Play trailer
-  </button>
-
+  <div class="layout-row">
+    <button class="button light watch-trailer-button ghost" ng-click="$ctrl.playTrailer()">
+      <i class="play-button material-icons">play_arrow</i>
+      Play trailer
+    </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="button light watch-trailer-button ghost" ng-click="$ctrl.seeDetails()">
+      <i class="play-button material-icons">info_outline</i>
+      See more details
+    </button>
+  </div>
 </div>
+
+<dialog-player ng-show="$ctrl.dialog.isOpen" video="$ctrl.resource" settings="$ctrl.dialog"></dialog-player>

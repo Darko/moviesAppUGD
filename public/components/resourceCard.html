@@ -1,13 +1,13 @@
 <div class="card-wrapper">
   <div class="card-image-wrapper">
-    <img ng-src="{{ vm.resource.preview }}">
+    <img ng-src="{{ $ctrl.resource.preview }}">
   </div>
   <div class="card-text-wrapper">
-    <h2 class="card-text-title">{{ vm.resource.title }}</h2>
-    <p class="card-text-caption">{{ vm.resource.caption }}</p>
+    <h2 class="card-text-title">{{ $ctrl.resource.title }}</h2>
+    <p class="card-text-caption">{{ $ctrl.resource.caption }}</p>
   </div>
   <div class="card-actions">
-    <button class="button watch-trailer-button ghost dark small" ng-click="vm.playTrailer()">
+    <button class="button watch-trailer-button ghost dark small" ng-click="$ctrl.playTrailer()">
       <i class="play-button material-icons">play_arrow</i>
       Play trailer
     </button>

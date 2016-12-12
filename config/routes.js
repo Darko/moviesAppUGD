@@ -1,6 +1,7 @@
 var config = require('./config');
 var path = require('path');
 var express = require('express');
+var controller = require('../app/controllers/resources');
 
 module.exports = function (app) {
 
@@ -10,9 +11,9 @@ module.exports = function (app) {
   });
 
   // Movies
-  app.get('/popular', function (req, res) {
-    // Fix this to serve actual data
-    res.send('Deez are popular moviezz');
-  });
+  app.get('/api/popular', controller.index);
+  app.get('/api/:resource', controller.show);
+  app.post('/api/resource', controller.create);
+  app.delete('/api/:resource', controller.remove);
 
 };
