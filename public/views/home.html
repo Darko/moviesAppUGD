@@ -1,5 +1,5 @@
 <header>
-  <div class="hero" style="background-image: url(src/images/got-hero-img.jpg)">
+  <div class="hero" style="background-image: url({{vm.featured.hero}})">
     <navbar></navbar>
     <featured-content resource="vm.featured"></featured-content>
   </div>
@@ -10,11 +10,11 @@
     <resource-card ng-repeat="resource in vm.resources" resource="resource"></resource-card>
   </div>
 </section>
-<div class="container layout-row layout-align-space-between-center">
-  <button class="icon-button dark">
+<div class="container actions layout-row layout-align-space-between-center">
+  <button class="icon-button dark" ng-click="vm.buttonAction.slideLeft('active')">
     <i class="material-icons">chevron_left</i>
   </button>
-  <button class="icon-button dark">
+  <button class="icon-button dark" ng-click="vm.buttonAction.slideRight('active')">
     <i class="material-icons">chevron_right</i>
   </button>
 </div>

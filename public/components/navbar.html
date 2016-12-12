@@ -1,6 +1,53 @@
-<nav class="main-nav">
+<nav class="main-nav layout-row layout-align-space-between-center">
   <a ui-sref="home.main" class="logo">
     <span class="icon"></span>
     SickMovies
   </a>
+  <button class="button submit-movie ghost dark small" ng-click="$ctrl.open()">
+    Submit Movie
+  </button>
 </nav>
+
+<div class="dialog-player add-movie backfade" ng-show="$ctrl.showModal">
+  <div class="modal-wrapper">
+    <div class="header layout-row layout-align-space-between-center">
+      <span class="layout-row layout-align-space-between-center dialog-title">
+        <i class="material-icons">play_arrow</i>
+        Submit Movie / Show
+      </span>
+      <button class="button icon-button dark" ng-click="$ctrl.close()">
+        <i class="material-icons">close</i>
+      </button>
+    </div>
+    <form class="body" ng-submit="$ctrl.submit()">
+      <div class="input-container">
+        <label>Title</label>
+        <input type="text" required ng-model="$ctrl.data.title">
+      </div>
+      <div class="input-container">
+        <label>Caption</label>
+        <textarea type="text" required ng-model="$ctrl.data.caption"></textarea>
+      </div>
+      <div class="input-container">
+        <label>Type</label>
+        <label>
+          <input type="radio" ng-model="$ctrl.data.type" name="type" value="movie"><span>Movie</span>
+        </label>
+        <label>
+          <input type="radio" ng-model="$ctrl.data.type" name="type" value="show"><span>Show</span>
+        </label>
+      </div>
+      <div class="input-container">
+        <label>Preview</label>
+        <input type="text" required ng-model="$ctrl.data.preview">
+      </div>
+      <div class="input-container">
+        <label>Wallpaper</label>
+        <input type="text" required ng-model="$ctrl.data.hero">
+      </div>
+      <button class="button watch-trailer-button ghost dark small" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

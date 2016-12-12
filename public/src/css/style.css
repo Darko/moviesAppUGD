@@ -118,6 +118,11 @@ button:focus, button:active {
   margin-right: 8px;
 }
 
+.button.submit-movie {
+  background-color: rgba(84, 43, 173, 0.75);
+  padding: 8px 16px;
+}
+
 /* Typography */
 .dialog-title {
   font-size: 18px;
@@ -202,9 +207,9 @@ header .hero:before {
 
 .main-nav:after {
   content: '';
-  width: calc(100% - 160px);
+  width: calc(100% - 310px);
   top: calc(50% + 2px);
-  right: 0;
+  right: 140px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
@@ -273,6 +278,8 @@ resource-card .card-wrapper {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 4px 0 35px 0 rgba(44, 52, 125, 0.1);
+  min-width: 280px;
+  max-width: 280px;
 }
 resource-card .card-image-wrapper {
   width: 100%;
@@ -290,7 +297,7 @@ resource-card .card-image-wrapper img {
 resource-card .card-text-wrapper {
   padding: 12px;
   line-height: 1.6;
-  height: 270px;
+  height: 300px;
 }
 resource-card .card-text-title {
   font-size: 2.4em;
@@ -315,13 +322,17 @@ resource-card .card-actions {
   overflow: visible;
 }
 
+.featured-resources .container {
+  transition: all .2s ease-out;
+}
+
 /* Play trailer dialog */
 
-dialog-player {
+dialog-player, .dialog-player {
   display: block;
 }
 
-dialog-player .backfade {
+dialog-player .backfade, .dialog-player.backfade {
   position: fixed;
   top: 0;
   right: 0;
@@ -334,20 +345,65 @@ dialog-player .backfade {
   justify-content: center;
 }
 
-dialog-player .modal-wrapper {
+dialog-player .modal-wrapper, .dialog-player .modal-wrapper {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 1);
   display: inline-block;
 }
 
-dialog-player .header {
+dialog-player .header, .dialog-player .header {
   width: 100%;
   padding: 5px 10px;
   border-bottom: 1px #eee solid;
 }
 
-dialog-player .body {
+dialog-player .body, .dialog-player .body {
   width: 875px;
   height: 500px;
   padding: 10px;
+}
+
+.dialog-player.add-movie .body {
+  overflow-y: scroll;
+}
+
+.dialog-player.add-movie .button {
+  float: right;
+}
+
+.container.actions {
+  margin-top: 24px;
+}
+
+.input-container {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 24px auto;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-container input, .input-container textarea {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.input-container input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.input-container textarea {
+  min-height: 120px;
+}
+
+.disable-scroll {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }

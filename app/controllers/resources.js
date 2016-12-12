@@ -12,7 +12,7 @@ module.exports.create = function (req, res, next) {
 
   resource.save()
   .then(function (resource) {
-    return res.json(user)
+    return res.json(resource)
   })
   .catch(next);
 
