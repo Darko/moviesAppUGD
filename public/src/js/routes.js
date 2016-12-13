@@ -6,9 +6,14 @@ app.config(function ($stateProvider) {
     controller: 'HomePageController as vm'
   })
   .state('home.main', {
-    url: '/home',
+    url: '/index',
     templateUrl: '../../views/home.html',
     controller: 'HomeMainController as vm'
+  })
+  .state('home.resource', {
+    url: '/details/:resourceId',
+    templateUrl: '../../views/details.html',
+    controller: 'ResourceDetailsController as vm'
   })
 
 });

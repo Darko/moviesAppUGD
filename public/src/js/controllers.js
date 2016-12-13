@@ -7,18 +7,14 @@ app.controller('HomePageController', function ($state) {
 .controller('HomeMainController', function ($state, $http, $scope) {
   var vm = this;
 
-  vm.featured = {
-    hero: 'src/images/got-hero-img.jpg',
-    title: 'Game of Thrones',
-    caption: 'Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race, hell-bent on destruction, returns after being dormant for thousands of years.'
-  }
-
+  vm.featured = {};
   vm.resources = [];
   var translateRatio;
 
   $http.get('/api/popular')
   .then(function (result) {
     vm.resources = result.data;
+    vm.featured = vm.resources[0];
     translateRatio = vm.resources.length * (280 + 32);
   });
 
@@ -44,5 +40,9 @@ app.controller('HomePageController', function ($state) {
     console.log(data);
     vm.resources.push(data);
   })
+})
+.controller('ResourceDetailsController', function ($stateParams) {
+  var vm = this;
 
+  
 })

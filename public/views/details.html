@@ -1,0 +1,26 @@
+<navbar class="light-bg"></navbar>
+
+<div class="layout-row container">
+  <div class="comments">
+    <div class="no-reviews" ng-if="!vm.comments">
+      <h1 class="md-display-1">
+        There are no reviews about this movie
+      </h1>
+    </div>
+
+  </div>
+  <form ng-submit="vm.submitComment()" class="submit-comment" name="submitComment">
+    <h2 class="md-title">Submit a review</h2>
+    <div class="input-container">
+      <label>Name</label>
+      <input type="text" required ng-model="vm.data.name">
+    </div>
+    <div class="input-container">
+      <label>Write your review</label>
+      <textarea required ng-model="vm.data.comment"></textarea>
+    </div>
+    <button class="button watch-trailer-button ghost dark small" type="submit">
+      Submit
+    </button>
+  </form>
+</div>
